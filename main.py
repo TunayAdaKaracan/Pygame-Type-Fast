@@ -8,6 +8,9 @@ pygame.init()
 
 screen = pygame.display.set_mode((600, 800), vsync=1)
 pygame.display.set_caption("Type Fast!")
+icon = pygame.image.load("assets/ship.png")
+icon.set_colorkey((255, 255, 255))
+pygame.display.set_icon(icon)
 
 clock = pygame.time.Clock()
 font_20 = pygame.font.Font("fonts/Pixeled.ttf", 20)
